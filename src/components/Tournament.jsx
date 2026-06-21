@@ -105,7 +105,7 @@ const Tournament = () => {
                   </div>
                 </div>
 
-                {/* Leaderboard segment */}
+                {/* Rank segment */}
                 <div className="space-y-3">
                   <h4 className="text-xs font-bold tracking-wider text-slate-400 uppercase mb-2">Top Standing</h4>
                   {t.leaderboard.map((player) => (
@@ -134,7 +134,6 @@ const Tournament = () => {
                 </div>
               </div>
 
-              {/* Action Button */}
               <button className="w-full mt-6 bg-white hover:bg-primary hover:text-white dark:bg-slate-900 dark:hover:bg-primary border border-slate-200 dark:border-slate-800 hover:border-primary dark:hover:border-primary text-slate-700 dark:text-slate-250 font-bold py-2.5 rounded-xl transition-all duration-300 cursor-pointer">
                 {t.status === 'Live' ? 'Join Arena' : 'Register Now'}
               </button>

@@ -10,7 +10,6 @@ const Navbar = () => {
     { name: 'Play', href: '#live-preview' },
     { name: 'Features', href: '#features' },
     { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Puzzles', href: '#puzzles' },
     { name: 'Tournaments', href: '#tournaments' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'FAQ', href: '#faq' },
@@ -79,7 +78,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Menu */}
       <div
         className={`md:hidden fixed inset-x-0 top-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-all duration-300 ease-in-out transform ${
           isOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible'

@@ -13,7 +13,6 @@ const KingSVG = ({ className, fill = "none", stroke = "currentColor" }) => (
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex flex-col justify-between bg-lightBg dark:bg-darkBg transition-colors duration-300 overflow-hidden pt-12 pb-8">
-      {/* Background blobs for premium glow */}
       <div className="absolute top-20 left-1/3 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
 
@@ -57,7 +56,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Graphical Column (Animated Chess Board) */}
           <div className="md:col-span-5 relative flex justify-center items-center">
             {/* The Chess Board Graphic */}
             <div className="w-full max-w-[400px] aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-300 dark:border-slate-800 bg-slate-900 grid grid-cols-8 grid-rows-8 relative group">
@@ -76,8 +74,6 @@ const Hero = () => {
                   />
                 );
               })}
-
-              {/* Floating Pieces Overlay - White & Black Kings */}
               
               {/* Black King - Floating on top-right */}
               <div className="absolute top-[20%] right-[20%] w-16 h-16 bg-slate-900/85 dark:bg-slate-950/85 backdrop-blur-md rounded-xl border border-slate-750/50 dark:border-slate-800/80 flex items-center justify-center shadow-lg animate-float-delayed drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
@@ -93,7 +89,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Trust Bar section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-center gap-4 p-5 rounded-2xl bg-white dark:bg-darkSurface shadow-md dark:shadow-slate-950/30 border border-slate-200/40 dark:border-slate-800/40 transition-all duration-300 hover:scale-[1.03]">

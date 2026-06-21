@@ -61,7 +61,7 @@ const FAQ = () => {
                   }`} />
                 </button>
 
-                {/* Answer content with smooth height transition */}
+                {/* Answer the content */}
                 <div className={`transition-all duration-300 ease-in-out ${
                   isOpen ? 'max-h-52 border-t border-slate-200/50 dark:border-slate-800/50' : 'max-h-0'
                 } overflow-hidden`}>

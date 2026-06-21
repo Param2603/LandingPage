@@ -47,11 +47,9 @@ const Testimonials = () => {
               key={idx}
               className="relative p-8 rounded-2xl bg-white dark:bg-darkSurface border border-slate-200/50 dark:border-slate-800/50 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between text-left group"
             >
-              {/* Quote icon watermark */}
               <Quote className="absolute top-6 right-6 w-10 h-10 text-slate-100 dark:text-slate-800/50 group-hover:text-primary/10 transition-colors pointer-events-none" />
 
               <div className="space-y-4">
-                {/* Stars */}
                 <div className="flex gap-1">
                   {Array.from({ length: t.stars }).map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current text-accent" />

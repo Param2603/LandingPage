@@ -21,7 +21,7 @@ const Footer = () => {
             <p className="text-sm leading-relaxed text-slate-400 max-w-sm">
               The ultimate online arena to play, learn, analyze, and master the game of chess. Join a global community of millions of chess enthusiasts.
             </p>
-            {/* Social Sharing Icons */}
+            {/* Social Icons */}
             <div className="flex gap-4 pt-2">
               {[
                 { icon: Twitter, href: '#', label: 'Twitter' },
@@ -44,7 +44,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links Column 1: Play */}
           <div className="space-y-4 text-left">
             <h4 className="text-sm font-bold tracking-wider text-white uppercase">Play</h4>
             <ul className="space-y-2.5 text-sm">
@@ -56,7 +55,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links Column 2: Learn */}
           <div className="space-y-4 text-left">
             <h4 className="text-sm font-bold tracking-wider text-white uppercase">Learn</h4>
             <ul className="space-y-2.5 text-sm">
@@ -68,7 +66,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter Column */}
           <div className="space-y-4 text-left">
             <h4 className="text-sm font-bold tracking-wider text-white uppercase">Newsletter</h4>
             <p className="text-xs leading-relaxed text-slate-400">

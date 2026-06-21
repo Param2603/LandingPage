@@ -37,7 +37,7 @@ const initialMatches = [
 const LiveGamePreview = () => {
   const [matches, setMatches] = useState(initialMatches);
 
-  // Fluctuates evaluations slightly in real-time to represent engine analysis updating
+  // Fluctuates evaluations slightly in real-time to represent engine analysis updating (math for changing bar)
   useEffect(() => {
     const interval = setInterval(() => {
       setMatches(prevMatches =>
@@ -113,7 +113,7 @@ const LiveGamePreview = () => {
 
                 {/* Players */}
                 <div className="space-y-3 mb-5">
-                  {/* White Player */}
+                  {/* White */}
                   <div className="flex justify-between items-center bg-slate-50/50 dark:bg-slate-900/30 p-2.5 rounded-lg border border-slate-100/50 dark:border-slate-800/30">
                     <div className="flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-white border border-slate-400 shadow-sm" />
@@ -130,7 +130,7 @@ const LiveGamePreview = () => {
                     <span className="h-px bg-slate-100 dark:bg-slate-800/50 flex-grow ml-2" />
                   </div>
 
-                  {/* Black Player */}
+                  {/* Black */}
                   <div className="flex justify-between items-center bg-slate-50/50 dark:bg-slate-900/30 p-2.5 rounded-lg border border-slate-100/50 dark:border-slate-800/30">
                     <div className="flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-slate-900 border border-slate-700 shadow-sm" />
@@ -165,7 +165,6 @@ const LiveGamePreview = () => {
                   </div>
                 </div>
 
-                {/* Card Footer */}
                 <div className="flex justify-between items-center mt-3 pt-3 border-t border-slate-100 dark:border-slate-800/60 text-xs text-slate-450 dark:text-slate-450">
                   <span className="font-semibold">Move {match.moves} • {match.timeControl}</span>
                   <button className="inline-flex items-center gap-0.5 text-primary hover:text-secondary font-bold transition-all cursor-pointer hover:translate-x-0.5">

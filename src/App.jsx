@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import LiveGamePreview from './components/LiveGamePreview';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
-import PuzzleTraining from './components/PuzzleTraining';
 import Tournament from './components/Tournament';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
@@ -68,10 +67,6 @@ const App = () => {
 
           <ScrollReveal>
             <HowItWorks />
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <PuzzleTraining />
           </ScrollReveal>
 
           <ScrollReveal>
