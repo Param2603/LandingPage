@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #81B64C;
   --color-secondary: #5D9948;
   --color-accent: #FFD54A;
   
-  --color-light-bg: #F8FAFC;
-  --color-light-surface: #FFFFFF;
-  --color-dark-bg: #0F172A;
-  --color-dark-surface: #1E293B;
+  --color-lightBg: #F8FAFC;
+  --color-lightSurface: #FFFFFF;
+  --color-darkBg: #0F172A;
+  --color-darkSurface: #1E293B;
 
   --animate-float: float 4s ease-in-out infinite;
   --animate-float-delayed: float-delayed 4.5s ease-in-out infinite;

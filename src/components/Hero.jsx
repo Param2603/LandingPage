@@ -1,30 +1,12 @@
 import React from 'react';
 import { Play, Tv, Users, Flame, Globe } from 'lucide-react';
 
-// Premium Custom Inline Chess Piece SVGs
-const KingSVG = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+// Premium Custom Inline Chess Piece SVG
+const KingSVG = ({ className, fill = "none", stroke = "currentColor" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill={fill} stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 2v3M10.5 3.5h3" />
     <path d="M5 21h14M6 18h12M18 18l-1.5-7.5L12 14.5l-4.5-4L6 18" />
     <path d="M12 14.5V18" />
-  </svg>
-);
-
-const QueenSVG = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M5 21h14M6 18h12" />
-    <path d="M18 18.5l-1-10.5L12 13 7 8 6 18.5" />
-    <circle cx="5" cy="8" r="1" fill="currentColor" />
-    <circle cx="12" cy="8" r="1" fill="currentColor" />
-    <circle cx="19" cy="8" r="1" fill="currentColor" />
-  </svg>
-);
-
-const KnightSVG = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M5 21h14M6 18h12" />
-    <path d="M6 18c0-5 3.5-9.5 8-9.5s7.5 3 6.5 8C20 17 19 18 19 18H6z" />
-    <path d="M14 8.5C14 6 12.5 3 9 3c-2.5 0-4 2.5-4 4.5S6.5 13 8.5 13.5l1.5.5M8 9.5a1 1 0 100-2 1 1 0 000 2z" />
   </svg>
 );
 
@@ -95,21 +77,16 @@ const Hero = () => {
                 );
               })}
 
-              {/* Floating Pieces Overlay */}
+              {/* Floating Pieces Overlay - White & Black Kings */}
               
-              {/* King - Floating on Left side */}
-              <div className="absolute top-[20%] left-[15%] w-16 h-16 bg-white/10 dark:bg-slate-900/40 backdrop-blur-md rounded-xl border border-white/20 dark:border-slate-700/30 flex items-center justify-center shadow-lg animate-float text-accent drop-shadow-[0_4px_12px_rgba(255,213,74,0.3)]">
-                <KingSVG className="w-10 h-10" />
+              {/* Black King - Floating on top-right */}
+              <div className="absolute top-[20%] right-[20%] w-16 h-16 bg-slate-900/85 dark:bg-slate-950/85 backdrop-blur-md rounded-xl border border-slate-750/50 dark:border-slate-800/80 flex items-center justify-center shadow-lg animate-float-delayed drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+                <KingSVG className="w-10 h-10 text-white" fill="#1e293b" stroke="#ffffff" />
               </div>
 
-              {/* Queen - Floating in Middle right */}
-              <div className="absolute top-[35%] right-[10%] w-16 h-16 bg-white/10 dark:bg-slate-900/40 backdrop-blur-md rounded-xl border border-white/20 dark:border-slate-700/30 flex items-center justify-center shadow-lg animate-bounce-slow text-primary drop-shadow-[0_4px_12px_rgba(129,182,76,0.3)]">
-                <QueenSVG className="w-10 h-10" />
-              </div>
-
-              {/* Knight - Floating in Lower Left center */}
-              <div className="absolute bottom-[20%] left-[30%] w-16 h-16 bg-white/10 dark:bg-slate-900/40 backdrop-blur-md rounded-xl border border-white/20 dark:border-slate-700/30 flex items-center justify-center shadow-lg animate-pulse-slow text-white dark:text-slate-200 drop-shadow-[0_4px_12px_rgba(255,255,255,0.25)]">
-                <KnightSVG className="w-10 h-10" />
+              {/* White King - Floating on bottom-left */}
+              <div className="absolute bottom-[20%] left-[20%] w-16 h-16 bg-white/80 dark:bg-white/25 backdrop-blur-md rounded-xl border border-white/50 dark:border-white/30 flex items-center justify-center shadow-lg animate-float drop-shadow-[0_4px_12px_rgba(255,255,255,0.35)]">
+                <KingSVG className="w-10 h-10 text-slate-800 dark:text-slate-900" fill="#ffffff" stroke="#1e293b" />
               </div>
             </div>
           </div>
